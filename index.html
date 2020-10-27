@@ -10,17 +10,22 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>Course website</title>
+    <title>Hello, world!</title>
     <style>
         img {
             width: 200px; /* You can set the dimensions to whatever you want */
             height: 200px;
             object-fit: cover;
         }
+        #authors img {
+            margin-top: -50px; }
+        #authors .card:hover {
+            background: #3292a6;
+            color: #fff; }
     </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top" id="home">
     <div class="container">
         <a href="index.html" class="navbar-brand">Shaamil Technology</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -28,20 +33,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a href="index.html" class="nav-link">Home</a>
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="#courses" class="nav-link active">Courses</a>
                 </li>
                 <li class="nav-item">
-                    <a href="services.html" class="nav-link">Courses</a>
+                    <a href="#authors" class="nav-link">meat Authors</a>
                 </li>
                 <li class="nav-item">
-                    <a href="blog.html" class="nav-link">books</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact Us</a>
+                    <a href="#contact" class="nav-link">Contact Us</a>
                 </li>
             </ul>
         </div>
@@ -54,7 +56,7 @@
         </div>
         </div>
     </div>
-    <div class="container text-muted" >
+    <div class="container text-muted" id="courses">
         <div class="row">
             <div class="col-md-6 col-lg-3">
                 <div class="card">
@@ -93,35 +95,204 @@
                 </div>
             </div>
         </div>
-        <h2 class="display-4 text-center py5">Meat the Teachers</h2>
-        <nav class="nav nav-pills justify-content-center flex-column flex-md-row py5 my4">
-            <a class="nav-link active" href="#boss" data-toggle="tab">Amiin Boss</a>
-            <a class="nav-link " href="#shaamil" data-toggle="tab">Caaqil yare</a>
-            <a class="nav-link " href="#comando" data-toggle="tab">The joker</a>
-            <a class="nav-link" href="#joker" data-toggle="tab">THe Fron-end Developer</a>
-        </nav>
-        <div class="tab-content">
-            <div class="tab-pane active" id="boss">
-                <h2>Amiin Boss</h2>
-                <p>I am A full stack  web developer or engineer who works with both the front and back ends of a website or application—meaning they can tackle projects that involve databases, building user-facing websites, or even work with clients during the planning phase of projects.</p>
+<section id="authors" class="my-5 text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="info-header mb-5">
+                    <h1 class="text-primary pb-3">
+                        Meet The Teachers
+                    </h1>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laborum numquam aperiam dolores a porro!
+                    </p>
+                </div>
             </div>
-            <div class="tab-pane" id="shaamil">
-                <h2>Caaqil Yare</h2>
-                <p>
-                     I am Front-end Developer who is responsible for implementing visual elements that users see and interact with in a web application. They are usually supported by back-end web developers, who are responsible for server-side application logic and integration of the work front-end developers do
-                </p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+<!--                        <img src="img/person-3.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">-->
+                        <h3>The Joker</h3>
+                        <h5 class="text-muted">Front-end Developer</h5>
+                        <p>I am Front-end Developer who is responsible for implementing visual elements that users see and interact with in a web application. They are usually supported by back-end web developers, who are responsible for server-side application logic and integration of the work front-end developers do
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <div class="p-4">
+                                <a href="http://facebook.com">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <a href="http://twitter.com">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <a href="http://instagram.com">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="tab-pane" id="comando">
-                <h2>The joker</h2>
-                <p>I am A video editor who involved in video production and the post-production of film making. ... Video editors usually use non-linear editing software to accomplish the task of editing. A video editor is a technically inclined individual that makes creative video editing decisions.</p>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+<!--                        <img src="img/person-2.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">-->
+                        <h3>All in One</h3>
+                        <h5 class="text-muted">Full Stack Developer</h5>
+
+                        <p>I am A full stack  web developer or engineer who works with both the front and back ends of a website or application—meaning they can tackle projects that involve databases, building user-facing websites, or even work with clients during the planning phase of projects.</p>
+                        <br>
+                        <br>
+                        <div class="d-flex justify-content-center">
+                            <div class="p-4">
+                                <a href="http://facebook.com">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <a href="http://twitter.com">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <a href="http://instagram.com">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="tab-pane" id="joker">
-                <h2>The Front-end Developer</h2>
-                <p>I am Front-end Developer who is responsible for implementing visual elements that users see and interact with in a web application. They are usually supported by back-end web developers, who are responsible for server-side application logic and integration of the work front-end developers do
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+<!--                        <img src="img/erson3p.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">-->
+                        <h3>John Doe</h3>
+                        <h5 class="text-muted">Editor</h5>
+                        <p>I am A video editor who involved in video production and the post-production of film making. ... Video editors usually use non-linear editing software to accomplish the task of editing. A video editor is a technically inclined individual that makes creative video editing decisions.</p>
+                        <div class="d-flex justify-content-center">
+                            <div class="p-4">
+                                <a href="http://facebook.com">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <a href="http://twitter.com">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <a href="http://instagram.com">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+<!--                        <img src="img/person4.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">-->
+                        <h3>Kevin Swanson</h3>
+                        <h5 class="text-muted">Designer</h5>
+                        <p>I am Front-end Developer who is responsible for implementing visual elements that users see and interact with in a web application. They are usually supported by back-end web developers, who are responsible for server-side application logic and integration of the work front-end developers do
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <div class="p-4">
+                                <a href="http://facebook.com">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <a href="http://twitter.com">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                            <div class="p-4">
+                                <a href="http://instagram.com">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- CONTACT -->
+<section id="contact" class="bg-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <h3>Get In Touch</h3>
+                <p class="lead">Lorem Joker ipsum dolor sit amet, consectetuer adipiscing elit,</p>
+                <form>
+                    <div class="input-group input-group-lg mb-3">
+                        <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-user"></i>
+                </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+
+                    <div class="input-group input-group-lg mb-3">
+                        <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Email">
+                    </div>
+
+                    <div class="input-group input-group-lg mb-3">
+                        <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-pencil-alt"></i>
+                </span>
+                        </div>
+                        <textarea class="form-control" placeholder="Message" rows="5"></textarea>
+                    </div>
+
+                    <input type="submit" value="Submit" class="btn btn-primary btn-block btn-lg">
+                </form>
+            </div>
+
+            <div class="col-lg-3 align-self-center">
+                <img src="img/mlogo.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="main-footer" class="py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-6 ml-auto">
+                <p class="lead">
+                    Copyright &copy; Shaamil technology
+                    <span id="year"></span>
                 </p>
             </div>
         </div>
     </div>
+</footer>
 </body>
 
 <!-- Optional JavaScript -->
